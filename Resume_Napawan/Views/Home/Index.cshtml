@@ -1,0 +1,120 @@
+﻿@*@using IEnumerable<NetCoreWebApp.Models.projectname>*@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    .responsive {
+        max-width: 100%;
+        height: auto;
+    }
+    h3.uppercase {
+        text-transform: uppercase;
+    }
+    /*div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+
+    * {
+        box-sizing: border-box;
+    }*/
+   
+
+</style>
+
+<div class="container">
+    <div class="row " style="margin-top:4vh">
+       <div class="col-md-4">
+           <img src="~/img/Napawan.jpg" class="responsive d-flex justify-content-center" width="300" height="400" >
+       </div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body" style="background-color: #73605B; " >
+                    <p class=" fw-bolder text-center text-white" style="font-size: 4vw; ">Napawan  Boonpen</p>
+                    <br/><br/>
+                    <p class=" fw-normal text-center text-white" style="font-size: 2vw; ">Programmer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top:5vh;">
+        <div class="col-md-6">
+            <h3 class=" uppercase">PROFILE</h3>
+            <br />
+            <h6 class="font-weight-normal"> Birth Date  :  4 June 1997 </h6>
+            <h6 class="font-weight-normal"> Birth Place: Ratchaburi, Thailand</h6>
+            <h6 class="font-weight-normal"> Motto: Try to do everything as bestyou can, even if you fail. But we learnfrom our mistakes.</h6>
+
+            <br />
+            <h3 class=" uppercase">CONTACT</h3>
+            <h6 class="font-weight-normal">E-mail : bnapawan4nfb@gmail.com</h6>
+            <h6 class="font-weight-normal">Phone : 097-1944518h6></h6>
+            <h6 class="font-weight-normal">Address : 199/33 M.4, T.Prasartsit, A.Damnoen Saduk, Ratchaburi, 70210 </h6>
+
+            <br />
+            <h3 class=" uppercase">PROGRAMMING SKILLS</h3>
+            <br />
+            <div class="gallery">
+                <img src="~/img/images.png" class="responsive img-thumbnail rounded border border-secondary" style="width: 100px; height: 100px;">
+                <div class="desc"><h6 class="font-weight-normal" style="text-align:center;" >intermediate</h6></div>
+            </div>
+
+            <div class="gallery">
+                <img src="~/img/html.png.500x500_q85_crop.png" class="responsive img-thumbnail rounded border border-secondary" style="width: 100px; height: 100px; ">
+                <div class="desc"><h6 class="font-weight-normal" style="text-align:center;">intermediate</h6></div>
+            </div>
+
+            <div class="gallery">
+                <img src="~/img/sql.jpg" class="responsive img-thumbnail rounded border border-secondary" style="width: 100px; height: 100px; ">
+                <div class="desc"><h6 class="font-weight-normal" style="text-align:center;">intermediate</h6></div>
+            </div>
+
+            <div class="gallery"> 
+                <img src="~/img/bootstrap-stack.png" class="responsive img-thumbnail rounded border border-secondary" style="width: 100px; height: 100px; ">
+                <div class="desc"><h6 class="font-weight-normal" style="text-align:center;">Basic</h6></div>
+            </div>
+
+            <div class="gallery">
+                <img src="~/img/js.png" class="responsive img-thumbnail rounded border border-secondary" style="width: 100px; height: 100px; ">
+                <div class="desc"><h6 class="font-weight-normal" style="text-align:center;">Basic</h6></div>
+            </div>
+        </div>
+
+        <br/>
+        <div class="col-md-6">
+            <h3 class=" uppercase">WORK EXPERIENCE</h3>
+            <br />
+            <h6 class="font-weight-bold " style="text-indent:1.5em;">Programmer </h6>
+            <h6 class="font-weight-normal" style="text-indent:2.0em;">ROHM Integrated Systems (Thailand) Co.,Ltd. AUG,2020 - NOW </h6>
+            <h6 class="font-weight-normal" style="text-indent:2.0em;"> - Design and develop programs for users in thecompany using asp.net core c# on the web app</h6>
+            <br />
+
+            <h3 class="uppercase">UNIVERSITY</h3>
+            <br />
+            <h6 class="font-weight-bold " style="text-indent:1.5em;">Education </h6>
+            <h6 class="font-weight-normal " style="text-indent:2.0em;">July,2016 – April,2020 . Bachelor of engineering (B.E.) inComputer Engineering, Kasetsart University KamphaengSaen Campus. </h6>
+            <h6 class="font-weight-bold " style="text-indent:1.5em;">Internship </h6>
+            <h6 class="font-weight-normal " style="text-indent:2.0em;">Interactive Voice Response (IVR) Team at Advancecontact center, Bangkok, Thailand. </h6> 
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <a class="btn btn-primary" asp-controller="Home" asp-action="Created" role="button"><i class="bi bi-calendar2-plus-fill"></i> &nbsp;&nbsp; Create</a>
+            <table class="table" style="margin-top:2vh">
+                <thead class="thead-dark" style="text-align:center;">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">ProjectName</th>
+                        <th scope="col">Detail</th>
+                        <th scope="col">DateCreated</th>
+                        <th scope="col">DateUpdate</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
